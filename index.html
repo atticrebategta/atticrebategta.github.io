@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Ontario pays up to $1,250 to insulate your attic. Attic Rebate GTA arranges it across the Greater Toronto Area.">
+<meta property="og:title" content="Ontario pays up to $1,250 to insulate your attic">
+<meta property="og:description" content="A 700 sq ft Maple attic: $1,600 bill, $800 back, one day of work.">
+<meta property="og:image" content="attic_after.jpg">
+<style>
+  :root{padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px)}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0} img{max-width:100%} [hidden]{display:none!important}
+</style>
+<title>Attic Rebate GTA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&display=swap">
+<style>
+  :root{
+    color-scheme:light;
+    --ground:#FFFFFF; --tint:#F8F5F0; --ink:#171C20; --soft:#68727A;
+    --rule:#E7E3DC; --accent:#C2561A; --accent-hi:#A8480F; --accent-soft:#FCF0E6;
+    --green:#2C6B4E; --green-soft:#EBF3EE;
+    --shadow:0 1px 2px rgba(23,28,32,.05), 0 12px 30px -16px rgba(23,28,32,.28);
+  }
+  *{box-sizing:border-box}
+  body{
+    background:var(--ground); color:var(--ink); margin:0;
+    font-family:"Libre Franklin",system-ui,-apple-system,"Segoe UI",Helvetica,sans-serif;
+    font-size:17px; line-height:1.55; -webkit-font-smoothing:antialiased;
+  }
+  .bar{background:var(--ground); border-bottom:1px solid var(--rule); position:sticky; top:env(safe-area-inset-top,0px); z-index:5}
+  .bar .in{max-width:900px; margin-inline:auto; padding:14px 20px; display:flex; align-items:center; justify-content:space-between; gap:14px}
+  .mark{display:flex; align-items:center; gap:9px; font-weight:800; font-size:16px; letter-spacing:-.015em}
+  .mark svg{flex:none; color:var(--accent)}
+  .loc{font-size:13px; color:var(--soft); font-weight:500}
+
+  .wrap{max-width:660px; margin-inline:auto; padding-inline:20px}
+  #check{scroll-margin-top:90px}
+  html{scroll-behavior:smooth}
+  section{padding-block:40px; border-bottom:1px solid var(--rule)}
+  section:last-of-type{border-bottom:0}
+  h1{font-size:clamp(32px,7.2vw,46px); line-height:1.05; font-weight:800; margin:0 0 14px; text-wrap:balance; letter-spacing:-.033em}
+  h2{font-size:24px; font-weight:800; margin:0 0 16px; text-wrap:balance; letter-spacing:-.022em}
+  p{margin:0 0 14px} p:last-child{margin-bottom:0}
+  a{color:var(--accent)}
+  .eyebrow{font-size:11.5px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); margin:0 0 12px}
+  .sub{font-size:19px; color:var(--soft); margin-bottom:24px}
+  .sub b{color:var(--ink); font-weight:700}
+  .hero{padding-top:44px; padding-bottom:32px; border-bottom:0}
+
+  .btn{display:inline-flex; align-items:center; gap:9px; background:var(--accent); color:#FFF; text-decoration:none;
+       font-weight:700; font-size:17px; padding:15px 26px; border-radius:9px; box-shadow:var(--shadow); border:0; cursor:pointer;
+       font-family:inherit; transition:background .15s}
+  .btn:hover,.btn:focus-visible{background:var(--accent-hi)}
+  .btn.wide{width:100%; justify-content:center; font-size:18px; padding:17px 26px}
+  .btn.alt{background:var(--ground); color:var(--accent); border:2px solid var(--accent); box-shadow:none}
+  .btn.alt:hover,.btn.alt:focus-visible{background:var(--accent-soft)}
+  .acts{display:flex; flex-direction:column; gap:10px; margin-top:16px}
+  .under{font-size:14.5px; color:var(--soft); margin-top:11px}
+
+  .pair{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:32px}
+  @media (max-width:540px){ .pair{grid-template-columns:1fr} }
+  .shot{border:1px solid var(--rule); border-radius:12px; overflow:hidden; background:var(--ground)}
+  .shot img{display:block; width:100%; height:auto; aspect-ratio:4/3; object-fit:cover; background:var(--tint)}
+  .shot .ph{aspect-ratio:4/3; background:var(--tint); display:flex; flex-direction:column; gap:6px; align-items:center; justify-content:center;
+            text-align:center; padding:16px; font-size:12.5px; color:var(--soft)}
+  .shot .ph b{font-size:13.5px; color:var(--ink)}
+  .shot .cap{font-size:12px; font-weight:700; letter-spacing:.07em; text-transform:uppercase; padding:11px 14px; border-top:1px solid var(--rule)}
+  .shot.before .cap{color:var(--accent)} .shot.after .cap{color:var(--green)}
+
+  .receipt{background:var(--tint); border-radius:12px; padding:22px 22px}
+  .row{display:flex; justify-content:space-between; gap:16px; padding:10px 0; border-bottom:1px solid var(--rule); font-size:16px; font-variant-numeric:tabular-nums}
+  .row:last-of-type{border-bottom:0; border-top:2px solid var(--ink); margin-top:4px; padding-top:13px; font-size:21px; font-weight:800}
+  .row dt{margin:0; color:var(--soft); font-weight:500} .row:last-of-type dt{color:var(--ink); font-weight:800}
+  .row dd{margin:0; white-space:nowrap; font-weight:700}
+  dl{margin:0}
+
+  table{width:100%; border-collapse:collapse; font-size:17px}
+  th,td{text-align:left; padding:13px 6px; border-bottom:1px solid var(--rule)}
+  th{font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--soft); font-weight:700}
+  td.amt{font-weight:800; text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; font-size:19px}
+  tr:last-child td{border-bottom:0}
+  tr.top td{color:var(--accent)}
+
+  .check{background:var(--ground); border:2px solid var(--accent); border-radius:14px; box-shadow:var(--shadow); padding:24px}
+  .q{display:flex; gap:13px; align-items:flex-start; padding:11px 0; border-bottom:1px solid var(--rule); font-size:16.5px}
+  .q:last-of-type{border-bottom:0}
+  .q input{margin:3px 0 0; width:21px; height:21px; accent-color:var(--accent); flex:none; cursor:pointer}
+  .q label{cursor:pointer}
+  .verdict{margin:16px 0 0; padding:15px 16px; border-radius:9px; font-size:16px; background:var(--tint); color:var(--soft); font-weight:500}
+  .verdict.yes{background:var(--green-soft); color:var(--green); font-weight:700}
+  .verdict.no{background:var(--accent-soft); color:var(--accent-hi); font-weight:600}
+
+  .steps{display:flex; flex-direction:column; gap:14px; counter-reset:s}
+  .step{display:flex; gap:14px; align-items:flex-start}
+  .step::before{counter-increment:s; content:counter(s); flex:none; width:29px; height:29px; border-radius:50%;
+    background:var(--accent); color:#FFF; font-weight:800; font-size:14px; display:flex; align-items:center; justify-content:center; margin-top:1px}
+  .step p{margin:0}
+
+  .deadline{background:var(--accent-soft); border-radius:12px; padding:22px}
+  .deadline h2{color:var(--accent-hi); font-size:21px; margin-bottom:10px}
+  .deadline p{color:var(--accent-hi); margin:0}
+
+  .close{background:var(--tint); border-radius:14px; padding:30px 24px; text-align:center}
+  .close h2{margin-bottom:12px}
+  .close p{color:var(--soft)}
+  .me{font-size:14.5px; color:var(--soft); margin-top:18px; padding-top:16px; border-top:1px solid var(--rule)}
+
+  footer{padding:26px 0 54px; font-size:13px; color:var(--soft); line-height:1.5}
+  :focus-visible{outline:3px solid var(--accent); outline-offset:3px; border-radius:4px}
+</style>
+</head>
+<body>
+<div class="bar">
+  <div class="in">
+    <span class="mark">
+      <svg width="21" height="21" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.5 10.8V20h13v-9.2" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Attic Rebate GTA
+    </span>
+    <span class="loc">Greater Toronto Area</span>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <section class="hero">
+    <p class="eyebrow">Ontario Home Renovation Savings</p>
+    <h1>Ontario pays up to $1,250 to insulate your attic.</h1>
+    <p class="sub">A 700 sq ft attic we did in Maple last month: <b>$1,600 bill, $800 back, one day of work.</b> Upstairs holds its heat and the furnace runs less.</p>
+    <button class="btn" type="button" data-jump>See what you would get back</button>
+    <p class="under">Takes about 20 seconds. Nothing to pay.</p>
+
+    <div class="pair">
+      <figure class="shot before">
+        <img src="attic_before.jpg" alt="Attic before: thin patchy insulation with joists showing" loading="lazy">
+        <figcaption class="cap">Before</figcaption>
+      </figure>
+      <figure class="shot after">
+        <img src="attic_after.jpg" alt="Attic after: deep even blown insulation covering the joists" loading="lazy">
+        <figcaption class="cap">After</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>A recent job</h2>
+    <div class="receipt">
+      <dl>
+        <div class="row"><dt>Insulation invoice</dt><dd>$1,600</dd></div>
+        <div class="row"><dt>Ontario rebate</dt><dd>&minus;&nbsp;$800</dd></div>
+        <div class="row"><dt>We paid</dt><dd>$800</dd></div>
+      </dl>
+    </div>
+    <p style="margin-top:16px; color:var(--soft)">Maple, September 2026. 700 sq ft attic, one day on site.<br><strong style="color:var(--ink)">Price goes by the size of your attic</strong>, so yours will be more or less than this. The rebate does not: it is a flat amount based on how little is up there now.</p>
+  </section>
+
+  <section>
+    <h2>How much you get back</h2>
+    <table>
+      <thead><tr><th>Insulation up there now</th><th style="text-align:right">You get</th></tr></thead>
+      <tbody>
+        <tr class="top"><td><strong>Hardly any</strong></td><td class="amt">$1,250</td></tr>
+        <tr><td>A thin layer</td><td class="amt">$1,000</td></tr>
+        <tr><td>A fair bit already</td><td class="amt">$800</td></tr>
+        <tr><td>Cathedral or flat roof</td><td class="amt">$750</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:14px; color:var(--soft); font-size:16px">Older houses get the most. That Maple job was a 1999 build with some insulation already up there, so it landed in the $800 band. A 1960s bungalow does far better.</p>
+  </section>
+
+  <section id="check">
+    <h2>Do you qualify?</h2>
+    <div class="check">
+      <div class="q"><input type="checkbox" id="q1"><label for="q1">I own my home</label></div>
+      <div class="q"><input type="checkbox" id="q2"><label for="q2">Detached, semi, or townhouse</label></div>
+      <div class="q"><input type="checkbox" id="q3"><label for="q3">I heat with gas, electric, oil, propane or wood</label></div>
+      <div class="q"><input type="checkbox" id="q4"><label for="q4">Nobody has added attic insulation since we moved in</label></div>
+      <div class="q"><input type="checkbox" id="q5"><label for="q5">Never had an attic rebate before</label></div>
+      <p class="verdict" id="verdict">Tick what applies.</p>
+      <div class="acts">
+        <a class="btn wide" id="smsBtn" href="#">Text us for your rebate amount</a>
+        <a class="btn wide alt" id="fbBtn" href="#" target="_blank" rel="noopener">Message us on Facebook</a>
+      </div>
+      <p class="under" style="text-align:center">We write the message for you. Just hit send.<br>On a computer? Text <strong>249-499-4585</strong> from your phone.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>What happens next</h2>
+    <div class="steps">
+      <div class="step"><p>You text us. Five questions, two minutes.</p></div>
+      <div class="step"><p>We send a contractor to price it at your house. <strong>Free, and you can say no.</strong></p></div>
+      <div class="step"><p>One day of work. Your rebate comes back to you afterwards.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="deadline">
+      <h2>Get it done before the cold</h2>
+      <p>Attics book up fast once the furnaces go on, and the rebate money is limited. The sooner you check, the better your odds of getting it done this season.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="close">
+      <h2>Find out in two minutes</h2>
+      <p>Five questions and you will know. No pressure, and nothing to pay us.</p>
+      <p style="margin-top:18px"><button class="btn" type="button" data-jump>See what you would get back</button></p>
+      <p class="me">We arrange attic insulation across the GTA under the Ontario rebate programme. The install is done by a contractor registered on it, who invoices you directly and files your rebate paperwork. Programme details: <a href="https://homerenovationsavings.ca" target="_blank" rel="noopener">homerenovationsavings.ca</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Attic Rebate GTA arranges insulation work carried out by contractors registered on the Home Renovation Savings programme. We are not affiliated with Enbridge Gas, Save on Energy, the IESO or the Government of Ontario. Rebate amounts and eligibility are set by the programme and can change without notice.</p>
+  </footer>
+
+</div>
+
+<script>
+  /* ---- FILL THESE IN ---------------------------------------------- */
+  var CONTACT = {
+    sms: "+12494994585",             // texting number
+    messenger: ""                    // FB page, e.g. "https://m.me/atticrebategta"
+  };
+  /* ----------------------------------------------------------------- */
+
+  var LABELS = {
+    q1: "I own my home",
+    q2: "detached/semi/town",
+    q3: "gas, electric, oil, propane or wood heat",
+    q4: "attic never topped up",
+    q5: "no previous attic rebate"
+  };
+  var boxes = ["q1","q2","q3","q4","q5"].map(function(id){ return document.getElementById(id); });
+  var out = document.getElementById("verdict");
+  var smsBtn = document.getElementById("smsBtn");
+  var fbBtn  = document.getElementById("fbBtn");
+
+  function ticked(){
+    return boxes.filter(function(b){ return b.checked; }).map(function(b){ return LABELS[b.id]; });
+  }
+  function message(){
+    var t = ticked();
+    var m = "Hi, I'd like to check the attic insulation rebate.";
+    if (t.length) m += " From your site: " + t.join(", ") + ".";
+    return m;
+  }
+  function update(){
+    var t = ticked(), n = t.length;
+    var owns = boxes[0].checked, type = boxes[1].checked;
+    out.className = "verdict";
+    if (n === 0){ out.textContent = "Tick what applies."; }
+    else if (!owns){ out.classList.add("no"); out.textContent = "The owner has to apply, so renting rules it out. Own a place you rent out? That still works."; }
+    else if (n === 5){ out.classList.add("yes"); out.textContent = "You qualify. Tap below and we will get a contractor out to price it."; }
+    else if (n >= 3 && type){ out.classList.add("yes"); out.textContent = "Looking good. Tap below and we will confirm the rest."; }
+    else { out.textContent = "Tap below and we will check properly. Costs nothing to ask."; }
+
+    smsBtn.href = "sms:" + CONTACT.sms + "?&body=" + encodeURIComponent(message());
+    if (CONTACT.messenger){ fbBtn.href = CONTACT.messenger; fbBtn.hidden = false; }
+    else { fbBtn.hidden = true; }
+  }
+  boxes.forEach(function(b){ b.addEventListener("change", update); });
+
+  Array.prototype.forEach.call(document.querySelectorAll("[data-jump]"), function(btn){
+    btn.addEventListener("click", function(){
+      var el = document.getElementById("check");
+      el.scrollIntoView({behavior:"smooth", block:"start"});
+      setTimeout(function(){ boxes[0].focus({preventScroll:true}); }, 420);
+    });
+  });
+
+  update();
+</script>
+</body>
+</html>
